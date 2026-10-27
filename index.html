@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>COTW - Pesci</title>
+    <link rel="icon" type="image/png" href="img/icona.png">
+    <link rel="stylesheet" href="cotw.css">
+</head>
+<body>
+    <div class="sfondo-fisso"></div>
+    <h1>Le Riserve di COTW</h1>
+    <div id="reserves" class="reserves-container"></div>
+
+    <h2 id="titolo-pesci">Lista Pesci</h2>
+    <ul id="fishes" class="fishes-list"></ul>
+
+    <h2 id="titolo-dettagli">Dettagli Pesce</h2>
+    <div id="details" class="details-panel"></div>
+
+    <!-- Modale per immagine -->
+    <div id="imageModal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <div class="image-wrapper">
+                <img id="modalImg" src="" alt="Zona di pesca">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE COMPARAZIONE -->
+    <div id="compareModal" class="compare-modal">
+        <div class="compare-content">
+            <span id="closeCompare" class="close">&times;</span>
+            <h2>Comparazione Pesci</h2>
+
+            <div id="compareSelectArea"></div>
+
+            <h3>Risultati</h3>
+            <div id="compareResults"></div>
+        </div>
+    </div>
+
+
+    <audio id="goldenSound" src="audio/rgolden.mp3"></audio>
+    <audio id="norvegiaSound" src="audio/rnorvegia.mp3"></audio>
+    <audio id="spagnaSound" src="audio/rspagna.mp3"></audio>
+    <audio id="africaSound" src="audio/rafrica.mp3"></audio>
+    <audio id="giapponeSound" src="audio/rgiappone.mp3"></audio>
+    <audio id="pesceSound" src="audio/pesce.mp3"></audio>
+    <audio id="mappaSound" src="audio/mappa.mp3"></audio>
+    <audio id="comparaipesciSound" src="audio/compareipesci.mp3"></audio>
+    <audio id="comparaSound" src="audio/compara.mp3"></audio>
+
+    <script src="listaPesci.js"></script><!-- dati -->
+    <script src="cotw.js"></script><!-- logica -->
+
+
+</body>
+</html>
